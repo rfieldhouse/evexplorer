@@ -1,4 +1,4 @@
-Gfrom spyre import server
+from spyre import server
 
 import matplotlib.pyplot as plt
 import numpy as np
