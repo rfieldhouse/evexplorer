@@ -1,4 +1,4 @@
-FROM ubuntu
+FROM ubuntu:14.04.2
 MAINTAINER rfieldhouse
 
 # Update Ubuntu and add extra repositories
