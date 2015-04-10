@@ -1,3 +1,4 @@
+import cherrypy
 from spyre import server
 
 import matplotlib.pyplot as plt
@@ -25,5 +26,5 @@ class SimpleSineApp(server.App):
 
 if __name__ == '__main__':
 	app = SimpleSineApp()
-        cherrypy.config.update({'server.socket_host':'0.0.0.0'})
+	cherrypy.config.update({'server.socket_host':'0.0.0.0'})
 	app.launch()
