@@ -18,6 +18,7 @@ RUN apt-get -y install wget
 RUN apt-get -y install sshfs
 RUN apt-get -y install links
 RUN apt-get -y install git
+RUN apt-get -y install nano
 
 # Install python
 RUN wget http://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
