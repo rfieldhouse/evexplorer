@@ -29,6 +29,7 @@ RUN conda update conda --yes
 RUN conda install --yes numpy pandas matplotlib bokeh seaborn statsmodels
 RUN pip install logging prettyplotlib dataspyre cherrypy
 
-RUN git clone https://github.com/adamhajari/spyre.git
+#RUN git clone https://github.com/adamhajari/spyre.git
 
-CMD ["python", "/spyre/examples/simple_sine_example.py"]
+COPY simple_sine_example.py /simple_sine_example.py
+CMD ["python", "simple_sine_example.py"]
